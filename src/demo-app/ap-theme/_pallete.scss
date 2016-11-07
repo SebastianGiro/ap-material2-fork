@@ -1,0 +1,43 @@
+// Color palettes from the Material Design spec.
+// See https://www.google.com/design/spec/style/color.html
+//
+// Contrast colors are hard-coded because it is too difficult (probably impossible) to
+// calculate them. These contrast colors are pulled from the public Material Design spec swatches.
+// While the contrast colors in the spec are not prescriptive, we use them for convenience.
+
+
+$black-87-opacity: rgba(black, 0.87);
+$white-87-opacity: rgba(white, 0.87);
+
+$md-ap-orange: (
+  50: #ffffff,
+  100: #ffd1bd,
+  200: #ffaa85,
+  300: #ff783d,
+  400: #ff621f,
+  500: #ff4d00,
+  600: #e04400,
+  700: #c23b00,
+  800: #a33100,
+  900: #852800,
+  A100: #ffffff,
+  A200: #ffd1bd,
+  A400: #ff621f,
+  A700: #c23b00,
+  contrast: (
+    50: black,
+    100: black,
+    200: black,
+    300: black,
+    400: black,
+    500: $white-87-opacity,
+    600: $white-87-opacity,
+    700: $white-87-opacity,
+    800: $white-87-opacity,
+    900: $white-87-opacity,
+    A100: black,
+    A200: black,
+    A400: black,
+    A700: $white-87-opacity,
+  )
+);
