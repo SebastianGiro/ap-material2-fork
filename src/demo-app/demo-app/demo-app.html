@@ -11,6 +11,11 @@
       <hr>
 
       <a md-list-item
+        (click)="start.close()"
+        [routerLink]="['ui-kit']">
+        UI-Kit
+      </a>
+      <a md-list-item
          (click)="start.close()"
          [routerLink]="['baseline']">
         Baseline
